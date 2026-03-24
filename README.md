@@ -25,14 +25,18 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
+- [ ] Describe the game's purpose: This is a number guessing game where we earn points if we correctly guess the number with a lower amount of guesses.
+- [ ] Detail which bugs you found: 
+1. Hints were incorrect; they advised the user to guess in the opposite direction
+2. 'Enter' button for the submission did not work; only the button pressing option worked to submit a guess
 - [ ] Explain what fixes you applied.
-
+1. Resolved bugs 1 and 2 from above by changing logic in code
+2. Refactored by moving code from the app.py (UI file) to the logic_utils.py file. This ensures a separation of the backend logic and the frontend UI, which allows for easier debugging and creation of pytests. 
+3. Resolved streamlit issues of submitform and st.button by reviewing the streamlit documentation
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
-
+![streamlit page for a winning game with proper hints](streamlitgame.png)
 ## 🚀 Stretch Features
 
 - [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
